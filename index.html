@@ -6,26 +6,20 @@
     <title>Sample Tracker</title>
   </head>
   <body>
-    <h1>Submit Apparel Sample</h1>
-    <form
-      action="your_function_url"
-      method="post"
-      enctype="multipart/form-data"
-    >
-      <label for="style_number">Style Number:</label><br />
-      <input type="text" id="style_number" name="style_number" /><br />
-      <label for="date_received">Date Received:</label><br />
-      <input type="date" id="date_received" name="date_received" /><br />
-      <label for="sent_back">Sent Back:</label><br />
-      <input
-        type="checkbox"
-        id="sent_back"
-        name="sent_back"
-        value="true"
-      /><br />
-      <label for="image">Image:</label><br />
-      <input type="file" id="image" name="image" /><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
+    <a href="/create.html">Add Sample</a>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Style Number</th>
+          <th scope="col">Date Received</th>
+          <th scope="col">Sent Back</th>
+          <th scope="col">Update / Delete</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        
+      </tbody>
+    </table>
+    
   </body>
 </html>
